@@ -103,8 +103,7 @@ class SuperHeroListFragment : Fragment() {
             ErrorApp.TestErrorApp -> TODO()
         }
     }
-    private fun navigateToDetails(superHeroId: String){
-        Log.d("@dev", "superHeroId: $superHeroId") //llega bien
+    private fun navigateToDetails(superHeroId: String){ //llega bien
         findNavController().navigate(SuperHeroListFragmentDirections
             .actionSuperheroFragmentToSuperheroFragmentDetail(superHeroId)
         )
